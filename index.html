@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blob World</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game">
+
+        <header id="game-header">
+            <h1>BLOB WORLD</h1>
+            <p>A tiny world of tiny creatures.</p>
+        </header>
+
+        <main id="game-screen">
+
+            <!-- CHARACTER CREATION -->
+
+            <section id="blob-setup">
+
+                <section id="blob-home">
+                    <h2>CHOOSE YOUR BLOB</h2>
+
+                    <div id="blob-selection">
+
+                        <button class="blob-option" data-blob="circle">
+                            <div class="blob-preview circle">
+                                <div class="blob-eyes">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="blob-mouth"></div>
+                            </div>
+                            <span>CIRCLE</span>
+                        </button>
+
+                        <button class="blob-option" data-blob="square">
+                            <div class="blob-preview square">
+                                <div class="blob-eyes">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="blob-mouth"></div>
+                            </div>
+                            <span>SQUARE</span>
+                        </button>
+
+                        <button class="blob-option" data-blob="triangle">
+                            <div class="blob-preview triangle">
+                                <div class="blob-eyes">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="blob-mouth"></div>
+                            </div>
+                            <span>TRIANGLE</span>
+                        </button>
+
+                    </div>
+
+                    <p id="blob-situation">PICK YOUR LITTLE WEIRDO.</p>
+
+                    <div id="blob-naming">
+                        <p>GIVE YOUR WEIRDO A NAME.</p>
+
+                        <input
+                            type="text"
+                            id="blob-name-input"
+                            maxlength="5"
+                            placeholder="XXXXX"
+                            autocomplete="off"
+                            autocapitalize="characters"
+                            spellcheck="false"
+                        >
+
+                        <p id="name-message">
+                            5 LETTERS OR NUMBERS. NO NONSENSE.
+                        </p>
+
+                        <button id="confirm-blob-button" disabled>
+                            THAT'S MY BLOB!
+                        </button>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- BLOB HOME SCREEN -->
+
+            <section id="blob-home-screen" hidden>
+
+                <p>YOUR RESIDENT WEIRDO:</p>
+
+                <div id="active-blob-container">
+                    <div id="active-blob">
+                        <div class="blob-eyes">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="blob-mouth"></div>
+                    </div>
+                </div>
+
+                <h2 id="active-blob-name">XXXXX</h2>
+
+                <p id="blob-day-counter">DAY 1</p>
+
+                <p id="active-blob-situation">
+                    Just existing :) 
+                </p>
+		<p id="blob-message">
+    		YOUR BLOB IS WAITING FOR SOMETHING TO HAPPEN.
+		</p>
+
+      
+                <nav id="game-menu">
+                    <button id="feed-button">FEED</button>
+                    <button id="play-button">PLAY</button>
+                    <button id="check-button">CHECK</button>
+                    <button id="settings-button">SETTINGS</button>
+                    <button id="reset-blob-button">RESET BLOB</button>
+                </nav>
+
+            </section>
+
+        </main>
+
+        <footer>BLOB WORLD v0.5.0</footer>
+
+    </div>
+
+    <script src="js/core/app.js"></script>
+</body>
+</html>
